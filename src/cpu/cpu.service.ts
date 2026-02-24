@@ -6,7 +6,7 @@ export class CpuService {
   constructor(private powerService: PowerService) {}
 
   compute(a: number, b: number) {
-    console.log('CPU membutuhkan 10 watt untuk menghitung');
+    console.log('CPU needs 10 watts to compute');
     this.powerService.supplyPower(10, 'CPU');
     return a + b;
   }
